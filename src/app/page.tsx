@@ -55,7 +55,7 @@ function ClientClock() {
     async function fetchWeather() {
       try {
         const response = await fetch(
-          "http://api.weatherapi.com/v1/current.json?key=7614b3af320142a8a9415016241112&q=Irvine"
+          "https://api.weatherapi.com/v1/current.json?key=7614b3af320142a8a9415016241112&q=Irvine"
         );
         const data = await response.json();
         setWeather(data.current);
